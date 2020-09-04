@@ -1,0 +1,151 @@
+2020-09-04 02:09:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-09-04 02:09:31 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:108
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Panel\SqlLogPanel.php:53
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\ToolbarService.php:219
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+
+
+2020-09-04 02:12:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-09-04 02:12:58 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:108
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Panel\SqlLogPanel.php:53
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\ToolbarService.php:219
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+
+
+2020-09-04 02:13:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-09-04 02:13:11 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:108
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Panel\SqlLogPanel.php:53
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\ToolbarService.php:219
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+
+
+2020-09-04 02:16:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-09-04 02:16:27 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:192
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Datasource\Locator\AbstractLocator.php:59
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:155
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\ToolbarService.php:258
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:66
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /
+
+
+2020-09-04 02:48:07 Error: [Cake\Http\Exception\MissingControllerException] Controller class Home could not be found. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Home',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /home
+
+
+2020-09-04 02:48:38 Error: [Cake\View\Exception\MissingTemplateException] Template file `Pages\f.php` could not be found.
+
+The following paths were searched:
+
+- `D:\Dados\App\mercado\app\templates\Pages\f.php`
+- `D:\Dados\App\mercado\app\vendor\cakephp\cakephp\templates\Pages\f.php`
+ in Pages\f.php on line 1354
+Exception Attributes: array (
+  'file' => 'Pages\\f.php',
+  'paths' => 
+  array (
+    0 => 'D:\\Dados\\App\\mercado\\app\\templates\\',
+    1 => 'D:\\Dados\\App\\mercado\\app\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\View.php:761
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:694
+- D:\Dados\App\mercado\app\src\Controller\PagesController.php:65
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pages/f
+
+

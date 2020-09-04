@@ -1,0 +1,13 @@
+---
+linters:
+  phpcs:
+    standard: CakePHP4
+    extensions: 'php'
+    fixer: true
+
+branches:
+    ignore: ['3.0', 'gh-pages']
+
+fixers:
+  enable: true
+  workflow: commit
