@@ -7429,3 +7429,24 @@ Stack Trace:
 Request URL: /produtos/1.json
 
 
+2020-09-05 14:24:24 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token from either the request body or request headers did not match or is missing. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php on line 313
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:154
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1.json
+
+

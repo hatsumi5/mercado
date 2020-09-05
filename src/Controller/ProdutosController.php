@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller;
@@ -20,7 +21,11 @@ class ProdutosController extends AppController
     {
         $produtos = $this->paginate($this->Produtos);
 
-        $this->set(compact('produtos'));
+        // $this->set(compact('produtos'));
+        $this->set([
+            'produtos' => $produtos,
+            '_serialize' => ['produtos']
+        ]);
     }
 
     /**
@@ -36,7 +41,7 @@ class ProdutosController extends AppController
             'contain' => [],
         ]);
 
-        $this->set(compact('produto'));
+        return $this->execute(null, null, 'produto', $produto, false);
     }
 
     /**
@@ -47,16 +52,17 @@ class ProdutosController extends AppController
     public function add()
     {
         $produto = $this->Produtos->newEmptyEntity();
+        $isSuccess = null;
+        $message = null;
+        $changeData = false;
+
         if ($this->request->is('post')) {
             $produto = $this->Produtos->patchEntity($produto, $this->request->getData());
-            if ($this->Produtos->save($produto)) {
-                $this->Flash->success(__('The produto has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The produto could not be saved. Please, try again.'));
+            $isSuccess = $this->Produtos->save($produto);
+            $message = $isSuccess ? 'The produto has been saved.' : 'The produto could not be saved. Please, try again.';
+            $changeData = true;
         }
-        $this->set(compact('produto'));
+        return $this->execute($message, $isSuccess, 'produto', $produto, $changeData);
     }
 
     /**
@@ -71,16 +77,17 @@ class ProdutosController extends AppController
         $produto = $this->Produtos->get($id, [
             'contain' => [],
         ]);
+        $isSuccess = null;
+        $message = null;
+        $changeData = false;
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $produto = $this->Produtos->patchEntity($produto, $this->request->getData());
-            if ($this->Produtos->save($produto)) {
-                $this->Flash->success(__('The produto has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The produto could not be saved. Please, try again.'));
+            $isSuccess = $this->Produtos->save($produto);
+            $message = $isSuccess ? 'The produto has been saved.' : 'The produto could not be saved. Please, try again.';
+            $changeData = true;
         }
-        $this->set(compact('produto'));
+        return $this->execute($message, $isSuccess, 'produto', $produto, $changeData);
     }
 
     /**
@@ -94,12 +101,8 @@ class ProdutosController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $produto = $this->Produtos->get($id);
-        if ($this->Produtos->delete($produto)) {
-            $this->Flash->success(__('The produto has been deleted.'));
-        } else {
-            $this->Flash->error(__('The produto could not be deleted. Please, try again.'));
-        }
-
-        return $this->redirect(['action' => 'index']);
+        $isSuccess = $this->Produtos->delete($produto);
+        $message = $isSuccess ? 'The produto has been deleted.' : 'The produto could not be deleted. Please, try again.';
+        return $this->execute($message, $isSuccess, 'produto', $produto, true);
     }
 }
