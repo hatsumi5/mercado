@@ -7502,3 +7502,477 @@ Stack Trace:
 Request URL: /pedidos/1
 
 
+2020-09-05 16:03:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1' for key 'uk_cliente_produto' in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:06:11 Error: [Error] Call to undefined method Cake\Mailer\Message::transport() in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Mailer\Email.php on line 158
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:71
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:06:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1' for key 'uk_cliente_produto' in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:08:56 Error: [Error] Call to undefined method Cake\Mailer\Message::to() in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Mailer\Email.php on line 158
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:72
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:09:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1' for key 'uk_cliente_produto' in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:22:42 Error: [Error] Call to undefined method Cake\Mailer\Message::to() in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Mailer\Email.php on line 158
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:72
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:23:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1' for key 'uk_cliente_produto' in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:24:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sql10363638`.`pedido`, CONSTRAINT `fk_pedido_produto` FOREIGN KEY (`codigo_produto`) REFERENCES `produto` (`codigo_produto`)) in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:28:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sql10363638`.`pedido`, CONSTRAINT `fk_pedido_cliente` FOREIGN KEY (`codigo_cliente`) REFERENCES `cliente` (`codigo_cliente`)) in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2124
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1936
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:99
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/edit/8
+Referer URL: http://localhost:8765/pedidos/edit/8
+
+
+2020-09-05 16:28:29 Error: [Error] Call to undefined method Cake\Mailer\Message::to() in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Mailer\Email.php on line 158
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:72
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 16:35:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1' for key 'uk_cliente_produto' in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Query.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:62
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/add
+Referer URL: http://localhost:8765/pedidos/add
+
+
+2020-09-05 17:10:27 Error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'sql10363638'@'177.183.76.174' (using password: YES) in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver.php on line 140
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'sql10363638\'@\'177.183.76.174\' (using password: YES)',
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:180
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:47
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:232
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:399
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:508
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Query.php:277
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Query.php:177
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1679
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1506
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:42
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'sql10363638'@'177.183.76.174' (using password: YES) in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver.php on line 132
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver.php:132
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver.php:138
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:180
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:47
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:232
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Database\Connection.php:399
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:508
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Query.php:277
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Query.php:177
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1679
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1261
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php:1506
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:42
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/2
+Referer URL: http://localhost:8765/pedidos
+
+

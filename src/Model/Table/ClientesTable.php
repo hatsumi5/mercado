@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Table;
@@ -40,6 +41,8 @@ class ClientesTable extends Table
         $this->setTable('cliente');
         $this->setDisplayField('codigo_cliente');
         $this->setPrimaryKey('codigo_cliente');
+
+        $this->hasMany('Pedidos');
     }
 
     /**

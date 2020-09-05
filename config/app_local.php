@@ -83,10 +83,10 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'host' => 'localhost',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => 465,
+            'username' => 'chm.developer@gmail.com',
+            'password' => 'chm1234',
             'client' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\Mailer\Email;
+
 /**
  * Pedidos Controller
  *
@@ -60,6 +62,17 @@ class PedidosController extends AppController
             $isSuccess = $this->Pedidos->save($pedido);
             $message = $isSuccess ? 'The pedido has been saved.' : 'The pedido could not be saved. Please, try again.';
             $changeData = true;
+            if ($isSuccess) {
+                $this->loadModel('Clientes');
+                $cliente = $this->Clientes->get($pedido->codigo_cliente, [
+                    'contain' => [],
+                ]);
+                try {
+                    Email::deliver($cliente->email, 'Pedido solicitado.', $message . "\n\n{print_r($pedido)}");
+                } catch (\Throwable $th) {
+                    $message .= '\n\nCan\'t send email.';
+                }
+            }
         }
         return $this->execute($message, $isSuccess, 'pedido', $pedido, $changeData);
     }

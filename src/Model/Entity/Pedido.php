@@ -10,10 +10,12 @@ use Cake\ORM\Entity;
  *
  * @property int $codigo_pedido
  * @property int $codigo_cliente
- * @property int $codigo_produto
  * @property \Cake\I18n\FrozenTime $data_pedido
  * @property string|null $observacao
  * @property string $forma_pagamento
+ *
+ * @property \App\Model\Entity\Cliente $cliente
+ * @property \App\Model\Entity\Produto $produto
  */
 class Pedido extends Entity
 {
@@ -28,9 +30,10 @@ class Pedido extends Entity
      */
     protected $_accessible = [
         'codigo_cliente' => true,
-        'codigo_produto' => true,
         'data_pedido' => true,
         'observacao' => true,
         'forma_pagamento' => true,
+        'cliente' => true,
+        'produto' => true,
     ];
 }

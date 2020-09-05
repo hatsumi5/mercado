@@ -40,6 +40,12 @@ class PedidosTable extends Table
         $this->setTable('pedido');
         $this->setDisplayField('codigo_pedido');
         $this->setPrimaryKey('codigo_pedido');
+
+        $this->belongsToMany('Produto', [
+            'foreignKey' => 'pedido_id',
+            'targetForeignKey' => 'produto_id',
+            'joinTable' => 'pedido_produto',
+        ]);
     }
 
     /**
@@ -58,11 +64,6 @@ class PedidosTable extends Table
             ->integer('codigo_cliente')
             ->requirePresence('codigo_cliente', 'create')
             ->notEmptyString('codigo_cliente');
-
-        $validator
-            ->integer('codigo_produto')
-            ->requirePresence('codigo_produto', 'create')
-            ->notEmptyString('codigo_produto');
 
         $validator
             ->dateTime('data_pedido')

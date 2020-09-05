@@ -7,6 +7,7 @@ namespace App\Controller;
 /**
  * Clientes Controller
  *
+ * @property \App\Model\Table\ClientesTable $Clientes
  * @method \App\Model\Entity\Cliente[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class ClientesController extends AppController
@@ -20,7 +21,6 @@ class ClientesController extends AppController
     {
         $clientes = $this->paginate($this->Clientes);
 
-        // $this->set(compact('clientes'));
         $this->set([
             'clientes' => $clientes,
             '_serialize' => ['clientes']
