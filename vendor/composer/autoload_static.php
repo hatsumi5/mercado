@@ -40,6 +40,7 @@ class ComposerStaticInitbfbd7aeb1fc4fbc6ddf0ae6c8672d548
         'b1fc73705e1bec51cd2b20a32cf1c60a' => __DIR__ . '/..' . '/cakephp/cakephp/src/Utility/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'ef9c510a90b1b0731c3586bd1728caba' => __DIR__ . '/..' . '/neomerx/json-api/src/I18n/format.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
@@ -95,6 +96,10 @@ class ComposerStaticInitbfbd7aeb1fc4fbc6ddf0ae6c8672d548
             'Phinx\\' => 6,
             'PHPStan\\PhpDocParser\\' => 21,
         ),
+        'N' => 
+        array (
+            'Neomerx\\JsonApi\\' => 16,
+        ),
         'M' => 
         array (
             'Migrations\\' => 11,
@@ -122,6 +127,8 @@ class ComposerStaticInitbfbd7aeb1fc4fbc6ddf0ae6c8672d548
         'C' => 
         array (
             'Crud\\' => 5,
+            'CrudJsonApi\\' => 12,
+            'Cors\\' => 5,
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Spdx\\' => 14,
             'Composer\\Semver\\' => 16,
@@ -283,6 +290,10 @@ class ComposerStaticInitbfbd7aeb1fc4fbc6ddf0ae6c8672d548
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
         ),
+        'Neomerx\\JsonApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/neomerx/json-api/src',
+        ),
         'Migrations\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/migrations/src',
@@ -334,6 +345,14 @@ class ComposerStaticInitbfbd7aeb1fc4fbc6ddf0ae6c8672d548
         'Crud\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofcake/crud/src',
+        ),
+        'CrudJsonApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofcake/crud-json-api/src',
+        ),
+        'Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ozee31/cakephp-cors/src',
         ),
         'Composer\\XdebugHandler\\' => 
         array (

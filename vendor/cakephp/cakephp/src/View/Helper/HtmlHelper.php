@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,6 +15,7 @@ declare(strict_types=1);
  * @since         0.9.1
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace Cake\View\Helper;
 
 use Cake\Core\Configure;
@@ -291,7 +293,6 @@ class HtmlHelper extends Helper
                 'confirm' => $confirm,
             ]);
         }
-
         return $templater->format('link', [
             'url' => $url,
             'attrs' => $templater->formatAttributes($options),

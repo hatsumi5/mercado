@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,9 +15,11 @@ declare(strict_types=1);
  * @since     0.2.9
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -43,6 +46,25 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Crud.Crud', [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+            // 'listeners' => [
+            //     'Crud.Api',
+            //     'Crud.ApiPagination',
+            //     'Crud.ApiQueryLog'
+            // ]
+            'listeners' => [
+                'CrudJsonApi.JsonApi',
+                'CrudJsonApi.Pagination', // Pagination != ApiPagination
+                'Crud.ApiQueryLog'
+            ]
+        ]);
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.

@@ -1,0 +1,24 @@
+2020-09-05 03:14:37 Error: [RuntimeException] Cannot apply 'csrf' middleware or middleware group. Use registerMiddleware() to register middleware. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php on line 991
+Stack Trace:
+- D:\Dados\App\mercado\app\config\routes.php:49
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:934
+- D:\Dados\App\mercado\app\config\routes.php:65
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:186
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:393
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:146
+- D:\Dados\App\mercado\app\bin\cake.php:12
+
+
+
+2020-09-05 03:14:51 Error: [RuntimeException] Cannot apply 'csrf' middleware or middleware group. Use registerMiddleware() to register middleware. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php on line 991
+Stack Trace:
+- D:\Dados\App\mercado\app\config\routes.php:49
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:934
+- D:\Dados\App\mercado\app\config\routes.php:65
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:186
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:393
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:146
+- D:\Dados\App\mercado\app\bin\cake.php:12
+
+
+

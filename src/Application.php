@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,6 +15,7 @@ declare(strict_types=1);
  * @since     3.3.0
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App;
 
 use Cake\Core\Configure;
@@ -25,6 +27,8 @@ use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
+use Cake\Http\Middleware\CspMiddleware;
+use Cake\Http\Middleware\EncryptedCookieMiddleware;
 
 /**
  * Application setup class.
@@ -41,6 +45,10 @@ class Application extends BaseApplication
      */
     public function bootstrap(): void
     {
+        $this->addPlugin('Crud');
+
+        $this->addPlugin('Crud');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
@@ -67,6 +75,11 @@ class Application extends BaseApplication
      */
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
     {
+        $cookies = new EncryptedCookieMiddleware(
+            // Names of cookies to protect
+            ['secrets', 'protected'],
+            Configure::read('Security.cookieKey')
+        );
         $middlewareQueue
             // Catch any exceptions in the lower layers,
             // and make an error page/response
@@ -95,6 +108,14 @@ class Application extends BaseApplication
             ->add(new CsrfProtectionMiddleware([
                 'httponly' => true,
             ]));
+
+        $cookies = new EncryptedCookieMiddleware(
+            // Names of cookies to protect
+            ['secrets', 'protected'],
+            Configure::read('Security.cookieKey')
+        );
+
+        $middlewareQueue->add($cookies);
 
         return $middlewareQueue;
     }

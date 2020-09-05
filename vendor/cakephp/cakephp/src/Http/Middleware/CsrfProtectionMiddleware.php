@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,6 +15,7 @@ declare(strict_types=1);
  * @since         3.5.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace Cake\Http\Middleware;
 
 use ArrayAccess;
@@ -126,9 +128,9 @@ class CsrfProtectionMiddleware implements MiddlewareInterface
         if ($request->getAttribute('csrfToken')) {
             throw new RuntimeException(
                 'A CSRF token is already set in the request.' .
-                "\n" .
-                'Ensure you do not have the CSRF middleware applied more than once. ' .
-                'Check both your `Application::middleware()` method and `config/routes.php`.'
+                    "\n" .
+                    'Ensure you do not have the CSRF middleware applied more than once. ' .
+                    'Check both your `Application::middleware()` method and `config/routes.php`.'
             );
         }
 

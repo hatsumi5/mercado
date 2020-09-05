@@ -1140,6 +1140,76 @@
         ]
     },
     {
+        "name": "friendsofcake/crud-json-api",
+        "version": "dev-cake-4.x",
+        "version_normalized": "dev-cake-4.x",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfCake/crud-json-api.git",
+            "reference": "6707217ea643f3d3b3bd63647a80e7ed003de839"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfCake/crud-json-api/zipball/6707217ea643f3d3b3bd63647a80e7ed003de839",
+            "reference": "6707217ea643f3d3b3bd63647a80e7ed003de839",
+            "shasum": ""
+        },
+        "require": {
+            "cakephp/cakephp": "^4.0.2",
+            "friendsofcake/crud": "^6.0",
+            "neomerx/json-api": "^4.0",
+            "php": ">=7.2.0"
+        },
+        "require-dev": {
+            "cakephp/cakephp-codesniffer": "^4.0",
+            "dms/phpunit-arraysubset-asserts": "^0.1.0",
+            "friendsofcake/cakephp-test-utilities": "^2.0.1",
+            "friendsofcake/search": "^6.0.0",
+            "phpunit/phpunit": "~8.5"
+        },
+        "suggest": {
+            "friendsofcake/search": "Provides search capabilities for the Crud plugin."
+        },
+        "time": "2020-08-18T13:16:46+00:00",
+        "type": "cakephp-plugin",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "CrudJsonApi\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bravo-Kernel",
+                "homepage": "http://github.com/bravo-kernel",
+                "role": "Author"
+            },
+            {
+                "name": "Marlin Cremers",
+                "homepage": "https://github.com/Marlinc",
+                "role": "Contributor"
+            },
+            {
+                "name": "Walther Lalk",
+                "homepage": "https://github.com/dakota",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Listener for building CakePHP Crud APIs following the JSON API specification.",
+        "homepage": "https://github.com/FriendsOfCake/crud-json-api",
+        "keywords": [
+            "api",
+            "cakephp",
+            "crud",
+            "json api",
+            "jsonapi"
+        ]
+    },
+    {
         "name": "jasny/twig-extensions",
         "version": "v1.3.0",
         "version_normalized": "1.3.0.0",
@@ -1767,6 +1837,64 @@
         ]
     },
     {
+        "name": "neomerx/json-api",
+        "version": "v4.0.1",
+        "version_normalized": "4.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/neomerx/json-api.git",
+            "reference": "0e45254a4574a3118e0ed663312b43aca23b89c7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/neomerx/json-api/zipball/0e45254a4574a3118e0ed663312b43aca23b89c7",
+            "reference": "0e45254a4574a3118e0ed663312b43aca23b89c7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.14",
+            "mockery/mockery": "^1.0",
+            "phpmd/phpmd": "^2.6",
+            "phpunit/phpunit": "^7.0",
+            "scrutinizer/ocular": "^1.4",
+            "squizlabs/php_codesniffer": "^2.9"
+        },
+        "time": "2020-03-03T05:56:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Neomerx\\JsonApi\\": "src/"
+            },
+            "files": [
+                "src/I18n/format.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "neomerx",
+                "email": "info@neomerx.com"
+            }
+        ],
+        "description": "Framework agnostic JSON API (jsonapi.org) implementation",
+        "homepage": "https://github.com/neomerx/json-api",
+        "keywords": [
+            "JSON-API",
+            "api",
+            "json",
+            "jsonapi",
+            "jsonapi.org",
+            "neomerx"
+        ]
+    },
+    {
         "name": "nikic/php-parser",
         "version": "v4.9.1",
         "version_normalized": "4.9.1.0",
@@ -1819,6 +1947,42 @@
             "parser",
             "php"
         ]
+    },
+    {
+        "name": "ozee31/cakephp-cors",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ozee31/cakephp-cors.git",
+            "reference": "fc45012d85972b8b2a4e9af7aef57fef033d16f9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/fc45012d85972b8b2a4e9af7aef57fef033d16f9",
+            "reference": "fc45012d85972b8b2a4e9af7aef57fef033d16f9",
+            "shasum": ""
+        },
+        "require": {
+            "cakephp/cakephp": "^4.0",
+            "php": ">=7.2.0",
+            "psr/http-server-handler": "^1.0",
+            "psr/http-server-middleware": "^1.0"
+        },
+        "require-dev": {
+            "cakephp/cakephp-codesniffer": "^4.0",
+            "phpunit/phpunit": "~8.5.0"
+        },
+        "time": "2020-05-14T16:20:43+00:00",
+        "type": "cakephp-plugin",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cors\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "description": "A CakePHP (3.3.x) plugin for activate cors domain in your application"
     },
     {
         "name": "phar-io/manifest",
