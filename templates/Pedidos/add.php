@@ -20,17 +20,15 @@
             <fieldset>
                 <legend><?= __('Add Pedido') ?></legend>
                 <?php
-                echo $this->Form->control('codigo_cliente');
-                echo $this->Form->control('codigo_produto');
-                // echo $this->Form->control('data_pedido');
-                echo $this->Form->control('observacao');
-                echo $this->Form->label('Forma de Pagamento');
-                echo $this->Form->select('forma_pagamento', ['dinheiro', 'cartão', 'cheque']);
                 echo $this->Form->label('Cliente');
                 echo '<select>';
                 foreach ($clientes as $cliente)
                     echo '<option value=' . $cliente->codigo_cliente . '>' . $cliente->nome . '</option>';
                 echo '</select>';
+                // echo $this->Form->control('data_pedido');
+                echo $this->Form->control('observacao');
+                echo $this->Form->label('Forma de Pagamento');
+                echo $this->Form->select('forma_pagamento', ['dinheiro', 'cartão', 'cheque']);
 
                 echo $this->Form->label('Produtos');
                 echo '<select>';

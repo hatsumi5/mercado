@@ -42,7 +42,7 @@ class PedidosController extends AppController
             'contain' => [],
         ]);
 
-        return $this->execute(null, null, 'pedido', $pedido, false);
+        return $this->result(null, null, 'pedido', $pedido, false);
     }
 
     /**
@@ -59,6 +59,10 @@ class PedidosController extends AppController
 
         if ($this->request->is('post')) {
             $pedido = $this->Pedidos->patchEntity($pedido, $this->request->getData());
+            echo '<pre>' . print_r($this->request->getData(), true) . '</pre>';
+            return;
+            return $this->result(print_r($this->request, true), true, 'pedido', $pedido, true);
+            $pedido->data_pedido = date('Y-m-d H:i:s');
             $isSuccess = $this->Pedidos->save($pedido);
             $message = $isSuccess ? 'The pedido has been saved.' : 'The pedido could not be saved. Please, try again.';
             $changeData = true;
@@ -76,7 +80,7 @@ class PedidosController extends AppController
             $clientes = $this->paginate($this->Clientes);
             $this->set(compact('produtos', 'clientes'));
         }
-        return $this->execute($message, $isSuccess, 'pedido', $pedido, $changeData);
+        return $this->result($message, $isSuccess, 'pedido', $pedido, $changeData);
     }
 
     /**
@@ -101,7 +105,7 @@ class PedidosController extends AppController
             $message = $isSuccess ? 'The pedido has been saved.' : 'The pedido could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, 'pedido', $pedido, $changeData);
+        return $this->result($message, $isSuccess, 'pedido', $pedido, $changeData);
     }
 
     /**
@@ -117,7 +121,7 @@ class PedidosController extends AppController
         $pedido = $this->Pedidos->get($id);
         $isSuccess = $this->Pedidos->delete($pedido);
         $message = $isSuccess ? 'The pedido has been deleted.' : 'The pedido could not be deleted. Please, try again.';
-        return $this->execute($message, $isSuccess, 'pedido', $pedido, true);
+        return $this->result($message, $isSuccess, 'pedido', $pedido, true);
     }
 
     public function sendmail($id = null)

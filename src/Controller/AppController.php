@@ -19,7 +19,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-use Cake\Event\Event;
+use Cake\Utility\Xml;
 
 /**
  * Application Controller
@@ -84,23 +84,30 @@ class AppController extends Controller
      * @param class|null Model to show in xml, json or in form.
      * @param bool $changeData Check if is changing data. If changing will set ($this->set([...])).
      */
-    protected function execute($message, $isSuccess, $modelName, $model, $changeData)
+    protected function result($message, $isSuccess, $modelName, $model, $changeData)
     {
-        if ($changeData) {
-            // redirect only if is web (form) and is success
-            if (!$this->request->is(['xml', 'json'])) {
-                if ($isSuccess) {
-                    $this->Flash->success(__($message));
-                    return $this->redirect(['action' => 'index']);
-                } else {
-                    $this->Flash->error(__($message));
+        if (RESPONSE == 'HTML') {
+            if ($changeData) {
+                // redirect only if is web (form) and is success
+                if (!$this->request->is(['xml', 'json'])) {
+                    if ($isSuccess) {
+                        $this->Flash->success(__($message));
+                        return $this->redirect(['action' => 'index']);
+                    } else {
+                        $this->Flash->error(__($message));
+                    }
                 }
             }
-        }
 
-        $this->set([
-            $modelName => $model,
-            '_serialize' => $changeData ? [$modelName, 'message'] : [$modelName]
-        ]);
+            $this->set([
+                $modelName => $model,
+                '_serialize' => $changeData ? [$modelName, 'message'] : [$modelName]
+            ]);
+        } elseif (RESPONSE == 'JSON') {
+            if ($message) $res['message'] = $message;
+            if ($isSuccess !== null) $res['success'] = $isSuccess;
+            $res['data'] = $model;
+            return $this->response->withStringBody(json_encode($res));
+        }
     }
 }

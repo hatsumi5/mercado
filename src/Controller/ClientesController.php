@@ -21,10 +21,7 @@ class ClientesController extends AppController
     {
         $clientes = $this->paginate($this->Clientes);
 
-        $this->set([
-            'clientes' => $clientes,
-            '_serialize' => ['clientes']
-        ]);
+        return $this->result(null, null, 'clientes', $clientes, false);
     }
 
     /**
@@ -40,7 +37,7 @@ class ClientesController extends AppController
             'contain' => [],
         ]);
 
-        return $this->execute(null, null, 'cliente', $cliente, false);
+        return $this->result(null, null, 'cliente', $cliente, false);
     }
 
     /**
@@ -61,7 +58,7 @@ class ClientesController extends AppController
             $message = $isSuccess ? 'The cliente has been saved.' : 'The cliente could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, 'cliente', $cliente, $changeData);
+        return $this->result($message, $isSuccess, 'cliente', $cliente, $changeData);
     }
 
     /**
@@ -86,7 +83,7 @@ class ClientesController extends AppController
             $message = $isSuccess ? 'The cliente has been saved.' : 'The cliente could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, 'cliente', $cliente, $changeData);
+        return $this->result($message, $isSuccess, 'cliente', $cliente, $changeData);
     }
 
     /**
@@ -102,6 +99,6 @@ class ClientesController extends AppController
         $cliente = $this->Clientes->get($id);
         $isSuccess = $this->Clientes->delete($cliente);
         $message = $isSuccess ? 'The cliente has been deleted.' : 'The cliente could not be deleted. Please, try again.';
-        return $this->execute($message, $isSuccess, 'cliente', $cliente, true);
+        return $this->result($message, $isSuccess, 'cliente', $cliente, true);
     }
 }

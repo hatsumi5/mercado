@@ -40,7 +40,7 @@ class ProdutosController extends AppController
             'contain' => [],
         ]);
 
-        return $this->execute(null, null, 'produto', $produto, false);
+        return $this->result(null, null, 'produto', $produto, false);
     }
 
     /**
@@ -61,7 +61,7 @@ class ProdutosController extends AppController
             $message = $isSuccess ? 'The produto has been saved.' : 'The produto could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, 'produto', $produto, $changeData);
+        return $this->result($message, $isSuccess, 'produto', $produto, $changeData);
     }
 
     /**
@@ -86,7 +86,7 @@ class ProdutosController extends AppController
             $message = $isSuccess ? 'The produto has been saved.' : 'The produto could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, 'produto', $produto, $changeData);
+        return $this->result($message, $isSuccess, 'produto', $produto, $changeData);
     }
 
     /**
@@ -102,6 +102,6 @@ class ProdutosController extends AppController
         $produto = $this->Produtos->get($id);
         $isSuccess = $this->Produtos->delete($produto);
         $message = $isSuccess ? 'The produto has been deleted.' : 'The produto could not be deleted. Please, try again.';
-        return $this->execute($message, $isSuccess, 'produto', $produto, true);
+        return $this->result($message, $isSuccess, 'produto', $produto, true);
     }
 }
