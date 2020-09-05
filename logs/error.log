@@ -7450,3 +7450,55 @@ Stack Trace:
 Request URL: /produtos/1.json
 
 
+2020-09-05 15:12:06 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "pedido" with primary key [NULL] in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php on line 1493
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:40
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/1.json
+
+
+2020-09-05 15:12:48 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "pedido" with primary key [NULL] in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php on line 1493
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\PedidosController.php:40
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /pedidos/1
+
+

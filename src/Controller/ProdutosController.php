@@ -21,7 +21,6 @@ class ProdutosController extends AppController
     {
         $produtos = $this->paginate($this->Produtos);
 
-        // $this->set(compact('produtos'));
         $this->set([
             'produtos' => $produtos,
             '_serialize' => ['produtos']

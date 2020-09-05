@@ -49,6 +49,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
     $builder->setExtensions(['json', 'xml']);
     $builder->resources('Clientes');
     $builder->resources('Produtos');
+    $builder->resources('Pedidos');
 
     $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
     $builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
