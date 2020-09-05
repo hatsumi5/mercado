@@ -183,6 +183,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                         <h3>Getting Started</h3>
                         <a target="_blank" rel="noopener" href="/clientes">Cliente</a>
                         <a target="_blank" rel="noopener" href="/produtos">Produto</a>
+                        <a target="_blank" rel="noopener" href="/pedidos">Pedido</a>
                     </div>
                 </div>
             </div>
