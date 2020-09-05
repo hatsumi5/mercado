@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Cliente $cliente
@@ -17,10 +18,12 @@
             <fieldset>
                 <legend><?= __('Add Cliente') ?></legend>
                 <?php
-                    echo $this->Form->control('nome');
-                    echo $this->Form->control('cpf');
-                    echo $this->Form->control('sexo');
-                    echo $this->Form->control('email');
+                echo $this->Form->control('nome');
+                echo $this->Form->control('cpf');
+                echo $this->Form->label('Sexo');
+                echo $this->Form->select('sexo', ['F' => 'Feminino', 'M' => 'Masculino']);
+                echo $this->Form->label('Email');
+                echo $this->Form->email('email');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

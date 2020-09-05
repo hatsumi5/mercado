@@ -46,6 +46,7 @@ use Cake\Routing\RouteBuilder;
 /** @var \Cake\Routing\RouteBuilder $routes */
 $routes->setRouteClass(DashedRoute::class);
 $routes->scope('/', function (RouteBuilder $builder) {
+    $builder->applyMiddleware();
     $builder->setExtensions(['json', 'xml']);
     $builder->resources('Clientes');
     $builder->resources('Produtos');
@@ -61,6 +62,8 @@ $routes->scope('/', function (RouteBuilder $builder) {
     $builder->post('/:controller', ['action' => 'add']);
     $builder->put('/:controller/:id', ['action' => 'edit'])->setPatterns(['id' => '[0-9]+']);
     $builder->delete('/:controller/:id', ['action' => 'delete']);
+    $builder->post('/pedidos/:id/sendmail', ['controller' => 'Pedidos', 'action' => 'sendmail'])->setPatterns(['id' => '[0-9]+']);
+    $builder->post('/pedidos/:id/report', ['controller' => 'Pedidos', 'action' => 'report'])->setPatterns(['id' => '[0-9]+']);
 
     $builder->fallbacks();
 });
