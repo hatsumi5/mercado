@@ -75,11 +75,6 @@ class Application extends BaseApplication
      */
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
     {
-        $cookies = new EncryptedCookieMiddleware(
-            // Names of cookies to protect
-            ['secrets', 'protected'],
-            Configure::read('Security.cookieKey')
-        );
         $middlewareQueue
             // Catch any exceptions in the lower layers,
             // and make an error page/response
@@ -108,14 +103,6 @@ class Application extends BaseApplication
             ->add(new CsrfProtectionMiddleware([
                 'httponly' => true,
             ]));
-
-        $cookies = new EncryptedCookieMiddleware(
-            // Names of cookies to protect
-            ['secrets', 'protected'],
-            Configure::read('Security.cookieKey')
-        );
-
-        $middlewareQueue->add($cookies);
 
         return $middlewareQueue;
     }

@@ -72,4 +72,35 @@ class AppController extends Controller
          */
         //$this->loadComponent('FormProtection');
     }
+
+
+
+    /**
+     * Execute to manage if will redirect when is not xml or json and is success.
+     *
+     * @param string|null $message to show.
+     * @param bool check if is success or error.
+     * @param string|null Model name to associate in array to set in xml, json or in form.
+     * @param class|null Model to show in xml, json or in form.
+     * @param bool $changeData Check if is changing data. If changing will set ($this->set([...])).
+     */
+    protected function execute($message, $isSuccess, $modelName, $model, $changeData)
+    {
+        if ($changeData) {
+            // redirect only if is web (form) and is success
+            if (!$this->request->is(['xml', 'json'])) {
+                if ($isSuccess) {
+                    $this->Flash->success(__($message));
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    $this->Flash->error(__($message));
+                }
+            }
+        }
+
+        $this->set([
+            $modelName => $model,
+            '_serialize' => $changeData ? [$modelName, 'message'] : [$modelName]
+        ]);
+    }
 }

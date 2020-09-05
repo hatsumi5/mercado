@@ -40,7 +40,7 @@ class ClientesController extends AppController
             'contain' => [],
         ]);
 
-        return $this->execute(null, null, $cliente, false);
+        return $this->execute(null, null, 'cliente', $cliente, false);
     }
 
     /**
@@ -61,7 +61,7 @@ class ClientesController extends AppController
             $message = $isSuccess ? 'The cliente has been saved.' : 'The cliente could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, $cliente, $changeData);
+        return $this->execute($message, $isSuccess, 'cliente', $cliente, $changeData);
     }
 
     /**
@@ -86,7 +86,7 @@ class ClientesController extends AppController
             $message = $isSuccess ? 'The cliente has been saved.' : 'The cliente could not be saved. Please, try again.';
             $changeData = true;
         }
-        return $this->execute($message, $isSuccess, $cliente, $changeData);
+        return $this->execute($message, $isSuccess, 'cliente', $cliente, $changeData);
     }
 
     /**
@@ -102,34 +102,6 @@ class ClientesController extends AppController
         $cliente = $this->Clientes->get($id);
         $isSuccess = $this->Clientes->delete($cliente);
         $message = $isSuccess ? 'The cliente has been deleted.' : 'The cliente could not be deleted. Please, try again.';
-        return $this->execute($message, $isSuccess, $cliente, true);
-    }
-
-    /**
-     * Execute to manage if will redirect when is not xml or json and is success.
-     *
-     * @param string|null $message to show.
-     * @param bool check if is success or error.
-     * @param Cliente|null Cliente model to show in xml, json or in form.
-     * @param bool $changeData Check if is changing data. If changing will set ($this->set([...])).
-     */
-    private function execute($message, $isSuccess, $cliente, $changeData)
-    {
-        if ($changeData) {
-            // redirect only if is web (form) and is success
-            if (!$this->request->is(['xml', 'json'])) {
-                if ($isSuccess) {
-                    $this->Flash->success(__($message));
-                    return $this->redirect(['action' => 'index']);
-                } else {
-                    $this->Flash->error(__($message));
-                }
-            }
-        }
-
-        $this->set([
-            'cliente' => $cliente,
-            '_serialize' => $changeData ? ['cliente', 'message'] : ['cliente']
-        ]);
+        return $this->execute($message, $isSuccess, 'cliente', $cliente, true);
     }
 }

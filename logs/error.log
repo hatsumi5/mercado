@@ -7159,3 +7159,273 @@ Stack Trace:
 Request URL: /clientes/1.json
 
 
+2020-09-05 11:11:42 Error: [TypeError] Argument 2 passed to Cake\Http\Middleware\EncryptedCookieMiddleware::__construct() must be of the type string, null given, called in D:\Dados\App\mercado\app\src\Application.php on line 81 in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php on line 73
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Application.php:81
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:83
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+
+
+2020-09-05 11:18:10 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produto" with primary key [NULL] in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php on line 1493
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\ProdutosController.php:36
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1
+
+
+2020-09-05 11:18:20 Error: [Cake\Http\Exception\MissingControllerException] Controller class Cliente could not be found. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Cliente',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /cliente/1
+
+
+2020-09-05 11:18:29 Error: [Cake\Http\Exception\MissingControllerException] Controller class Cliente could not be found. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Cliente',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /cliente/1
+
+
+2020-09-05 11:18:31 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produto" with primary key [NULL] in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\ORM\Table.php on line 1493
+Stack Trace:
+- D:\Dados\App\mercado\app\src\Controller\ProdutosController.php:36
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:527
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1
+
+
+2020-09-05 11:23:27 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token from either the request body or request headers did not match or is missing. in D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php on line 313
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:154
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1.json
+
+
+2020-09-05 11:23:33 Error: [Cake\View\Exception\MissingTemplateException] Template file `Produtos\json\view.php` could not be found.
+
+The following paths were searched:
+
+- `D:\Dados\App\mercado\app\templates\Produtos\json\view.php`
+- `D:\Dados\App\mercado\app\vendor\cakephp\cakephp\templates\Produtos\json\view.php`
+ in Produtos\json\view.php on line 1354
+Exception Attributes: array (
+  'file' => 'Produtos\\json\\view.php',
+  'paths' => 
+  array (
+    0 => 'D:\\Dados\\App\\mercado\\app\\templates\\',
+    1 => 'D:\\Dados\\App\\mercado\\app\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\View.php:761
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\SerializedView.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\JsonView.php:115
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:694
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1.json
+
+
+2020-09-05 11:23:54 Error: [Cake\View\Exception\MissingTemplateException] Template file `Produtos\json\view.php` could not be found.
+
+The following paths were searched:
+
+- `D:\Dados\App\mercado\app\templates\Produtos\json\view.php`
+- `D:\Dados\App\mercado\app\vendor\cakephp\cakephp\templates\Produtos\json\view.php`
+ in Produtos\json\view.php on line 1354
+Exception Attributes: array (
+  'file' => 'Produtos\\json\\view.php',
+  'paths' => 
+  array (
+    0 => 'D:\\Dados\\App\\mercado\\app\\templates\\',
+    1 => 'D:\\Dados\\App\\mercado\\app\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\View.php:761
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\SerializedView.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\JsonView.php:115
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:694
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1.json
+
+
+2020-09-05 11:27:42 Error: [Cake\View\Exception\MissingTemplateException] Template file `Produtos\json\view.php` could not be found.
+
+The following paths were searched:
+
+- `D:\Dados\App\mercado\app\templates\Produtos\json\view.php`
+- `D:\Dados\App\mercado\app\vendor\cakephp\cakephp\templates\Produtos\json\view.php`
+ in Produtos\json\view.php on line 1354
+Exception Attributes: array (
+  'file' => 'Produtos\\json\\view.php',
+  'paths' => 
+  array (
+    0 => 'D:\\Dados\\App\\mercado\\app\\templates\\',
+    1 => 'D:\\Dados\\App\\mercado\\app\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\View.php:761
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\SerializedView.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\View\JsonView.php:115
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:694
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\Controller.php:536
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:158
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- D:\Dados\App\mercado\app\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Dados\App\mercado\app\webroot\index.php:40
+
+Request URL: /produtos/1.json
+
+
