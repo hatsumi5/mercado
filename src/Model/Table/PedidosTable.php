@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Table;
@@ -10,6 +11,8 @@ use Cake\Validation\Validator;
 
 /**
  * Pedidos Model
+ *
+ * @property \App\Model\Table\ProdutoTable&\Cake\ORM\Association\BelongsToMany $Produto
  *
  * @method \App\Model\Entity\Pedido newEmptyEntity()
  * @method \App\Model\Entity\Pedido newEntity(array $data, array $options = [])
@@ -41,11 +44,14 @@ class PedidosTable extends Table
         $this->setDisplayField('codigo_pedido');
         $this->setPrimaryKey('codigo_pedido');
 
-        $this->belongsToMany('Produto', [
-            'foreignKey' => 'pedido_id',
-            'targetForeignKey' => 'produto_id',
-            'joinTable' => 'pedido_produto',
+        $this->belongsToMany('Produtos', [
+            'through' => 'PedidoProdutos'
         ]);
+        // $this->belongsToMany('Produto', [
+        //     'foreignKey' => 'pedido_id',
+        //     'targetForeignKey' => 'produto_id',
+        //     'joinTable' => 'pedido_produto',
+        // ]);
     }
 
     /**

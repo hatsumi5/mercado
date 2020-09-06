@@ -52,7 +52,7 @@ class PedidosFixture extends TestFixture
             [
                 'codigo_pedido' => 1,
                 'codigo_cliente' => 1,
-                'data_pedido' => '2020-09-05 17:30:22',
+                'data_pedido' => '2020-09-06 00:35:35',
                 'observacao' => 'Lorem ipsum dolor sit amet',
                 'forma_pagamento' => 'Lorem ',
             ],

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Table;
@@ -40,6 +41,9 @@ class PedidoProdutosTable extends Table
         $this->setTable('pedido_produto');
         $this->setDisplayField('codigo_pedido');
         $this->setPrimaryKey(['codigo_pedido', 'codigo_produto']);
+
+        $this->belongsTo('Produtos');
+        $this->belongsTo('Pedidos');
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Entity;
@@ -14,8 +15,7 @@ use Cake\ORM\Entity;
  * @property string|null $observacao
  * @property string $forma_pagamento
  *
- * @property \App\Model\Entity\Cliente $cliente
- * @property \App\Model\Entity\Produto $produto
+ * @property \App\Model\Entity\Produto[] $produtos
  */
 class Pedido extends Entity
 {
@@ -33,7 +33,6 @@ class Pedido extends Entity
         'data_pedido' => true,
         'observacao' => true,
         'forma_pagamento' => true,
-        'cliente' => true,
-        'produto' => true,
+        'produtos' => true,
     ];
 }

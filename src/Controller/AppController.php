@@ -105,7 +105,7 @@ class AppController extends Controller
             ]);
         } elseif (RESPONSE == 'JSON') {
             if ($message) $res['message'] = $message;
-            if ($isSuccess !== null) $res['success'] = $isSuccess;
+            if ($isSuccess !== null) $res['success'] = $isSuccess ? 1 : 0;
             $res['data'] = $model;
             return $this->response->withStringBody(json_encode($res));
         }
