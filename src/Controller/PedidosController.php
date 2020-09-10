@@ -23,10 +23,7 @@ class PedidosController extends AppController
     {
         $pedidos = $this->paginate($this->Pedidos);
 
-        $this->set([
-            'pedidos' => $pedidos,
-            '_serialize' => ['pedidos']
-        ]);
+        return $this->result(null, null, 'pedidos', $pedidos, false);
     }
 
     /**
@@ -58,12 +55,9 @@ class PedidosController extends AppController
         $changeData = false;
 
         if ($this->request->is('post')) {
-            $pedido = $this->Pedidos->patchEntity($pedido, $this->request->getData());
-            echo '<pre>' . print_r($this->request->getData(), true) . '</pre>';
-            return;
-            return $this->result(print_r($this->request, true), true, 'pedido', $pedido, true);
+            $pedido = $this->Pedidos->patchEntity($pedido, $this->request->getData(), ['associated' => ['Produtos.Pedidos']]);
             $pedido->data_pedido = date('Y-m-d H:i:s');
-            $isSuccess = $this->Pedidos->save($pedido);
+            $isSuccess = $this->Pedidos->save($pedido, ['associated' => 'Produtos._joinData']);
             $message = $isSuccess ? 'The pedido has been saved.' : 'The pedido could not be saved. Please, try again.';
             $changeData = true;
             if ($isSuccess) {
