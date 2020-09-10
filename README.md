@@ -8,6 +8,8 @@
  Para poder executar o projeto do mercado terá que estar com internet funcionando porque o MySQL está disponível no site https://www.freemysqlhosting.net/.
 Caso não for possível por motivos técnicos como por exemplo não estar com internet estável, ou o site que foi utilizado não estar no ar, deverá executar script disponível na categoria abaixo ou na ./config/schema/structures.sql no servidor do MySQL, que estão todos códigos para criação de tabelas necessários para o projeto. Após criar as tabelas deverá configurar o Datasources 'default' e 'test' que estão no arquivo ./config/app_local.php.
 
+ Tem uma opção para poder salvar pelo formulário mesmo (em HTML) e pelo API RESTful em JSON. Para alterar de HTML ou para JSON deverá alterar ./config/paths.php e definir variável RESPONSE para o que deseja. Este variável está definido em JSON como padrão.
+
  # Query do banco de dados MySQL
  O query abaixo é script para criar tabelas.
  <pre>
